@@ -31,7 +31,7 @@ window.addEventListener("keydown", (e) => {
 }, { passive: false })
 
 line.addEventListener("keydown", (e) => {
-  if (e.key == "Enter" && (e.ctrlKey || e.altKey)) {
+  if (e.key == "Enter") {
     e.preventDefault()
     onSend()
   }
@@ -315,8 +315,8 @@ function setSettingInput(config) {
 }
 
 var config = {
-  domain: "",
-  apiKey: "",
+  domain: "https://369chatai.buzz",
+  apiKey: "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",
   maxTokens: 500,
   model: "",
   firstPrompt: null,
